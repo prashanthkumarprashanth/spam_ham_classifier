@@ -1,0 +1,357 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>SPAM Detection</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+        
+    <!--====== Font Awesome CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+        
+    <!--====== Line Icons CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.css') }}">
+        
+    <!--====== Animate CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+        
+    <!--====== Magnific Popup CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+        
+    <!--====== Bootstrap CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    
+    <!--====== Default CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+    
+    <!--====== Style CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+   
+    <!--====== PRELOADER PART START ======-->
+	<form action="/Spam" method="[POST,GET]">
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header class="header-area">
+        <div class="navbar-area headroom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <h2>THE BOYS</h2>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#about">About </a>
+                                    </li>
+									
+									
+                                   
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            
+                            <div class="navbar-btn d-none d-sm-inline-block">
+								<input  type="submit" class="btn btn-primary my-2" value="Spam">
+                                <!-- <a href="spam.html"  ><b>Spam Detection<b></a> -->
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(static/images/header-hero.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="header-hero-content">
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>SMS</b> <span>SPAM</span> Detection Using <b>NLP.</b></h1>
+                           
+                        </div> <!-- header hero content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
+                <div class="image">
+                    <img src="static/images/hero-image.png" alt="Hero Image">
+                </div>
+            </div> <!-- header hero image -->
+        </div> <!-- header hero -->
+    </header>
+    
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="about" class="about-area pt-115">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6 class="welcome"><b>SPAM Detection</b></h6> 
+                        <h3 class="title"><span>Spam Detector for  </span> Short Message Service (SMS).</h3>
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-image mt-60 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="static/images/about.png" alt="about">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-content pt-45">
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Over recent years, as the popularity of mobile phone devices has increased, Short Message Service (SMS) has grown into a multi-billion dollars industry. At the same time, reduction in the cost of messaging services has resulted in growth in unsolicited commercial advertisements (spams) being sent to mobile phones. Due to Spam SMS, Mobile service providers suffer from some sort of financial problems as well as it reduces calling time for users. Unfortunately, if the user accesses such Spam SMS they may face the problem of virus or malware. When SMS arrives at mobile it will disturb mobile user privacy and concentration. It may lead to frustration of user. So Spam SMS is one of the major issues in wireless communication world and it grows day by day.</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"> Today most of the SMS’s are Spam SMS which consists of Credit Card offer, discount offers, traffic plans, promotions etc. Spam messages include advertisements, free services, promotions, awards, etc. People are using the ubiquity of mobile phone devices is expanding day by day as they give a vast variety of services by reducing the cost of services.To  avoid  such  Spam  SMS people  use  white  and black  list  of  numbers.  But this technique is not adequate to completely avoid Spam SMS. To tackle this problem it is needful to use a smarter technique which correctly identifies Spam SMS. Natural langugae processing technique is useful for Spam SMS identification. It analyses text content and find patterns which are used to identify Spam and Non-Spam SMS.</p>
+                        
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6 class="sub-title">Our Contact</h6>
+                        <h4 class="title">Get In <span>Touch.</span></h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="contact-info pt-30">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-1 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <div class="contact-info-icon">
+                                <i class="lni-map-marker"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text">LOCATION:New Boyanapalli, Rajampet, Andhra Pradesh 516126<br>THE BOYS</p>
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-2 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <div class="contact-info-icon">
+                                <i class="lni-envelope"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text">info@THEBOYS.com</p>
+                                
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-contact-info contact-color-3 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <div class="contact-info-icon">
+                                <i class="lni-phone"></i>
+                            </div>
+                            <div class="contact-info-content media-body">
+                                <p class="text">+91 63 02 55 32 92 <br>+91 91 21 88 66 12 <br>+91 89 78 58 40 69</p>
+                               
+                            </div>
+                        </div> <!-- single contact info -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- contact info -->
+            
+        
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+    
+    <footer id="footer" class="footer-area bg_cover" style="background-image: url(static/images/footer-bg.jpg)">
+        <div class="container">
+            <div class="footer-widget pt-30 pb-70">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
+                        <div class="footer-about pt-40">
+                            <a href="#">
+                                <h2>THE BOYS</h2>
+                            </a>
+                            <p class="text">WE LIVE , WE RULE.</p>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
+                        <div class="footer-link pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">Services</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Spam Detection</a></li>
+                             </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-4 order-lg-3">
+                        <div class="footer-link pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">About Us</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                               
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-2 order-lg-4">
+                        <div class="footer-contact pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">Contact Info</h5>
+                            </div>
+                            <div class="contact pt-10">
+                                <p class="text">Annamacharya institute of technology<br>
+                                    Rajampet<br>
+									 </p>
+                                <p class="text">info@THEBOYS.com</p>
+                                <p class="text">+91 6302553292</p>
+
+                                <ul class="social mt-40">
+                                    <li><a href="https://www.facebook.com/TheBoys/"><i class="lni-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Theboys"><i class="lni-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/TheBoys/"><i class="lni-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/Theboys/"><i class="lni-linkedin"></i></a></li>
+                                </ul>
+                            </div> <!-- contact -->
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright text-center">
+                <p class="text">©Made by <a href="https://www.theBoys/" rel="nofollow">THEBOYS</a> All Rights Reserved.</p>
+            </div>
+        </div> <!-- container -->
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->  
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="static/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="static/js/slick.min.js"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    
+    <!--====== Counter Up js ======-->
+    <script src="static/js/waypoints.min.js"></script>
+    <script src="static/js/jquery.counterup.min.js"></script>
+    
+    <!--====== Circles js ======-->
+    <script src="static/js/circles.min.js"></script>
+    
+    <!--====== Appear js ======-->
+    <script src="static/js/jquery.appear.min.js"></script>
+    
+    <!--====== WOW js ======-->
+    <script src="static/js/wow.min.js"></script>
+    
+    <!--====== Headroom js ======-->
+    <script src="static/js/headroom.min.js"></script>
+    
+    <!--====== Jquery Nav js ======-->
+    <script src="static/js/jquery.nav.js"></script>
+    
+    <!--====== Scroll It js ======-->
+    <script src="static/js/scrollIt.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="static/js/main.js"></script>
+    </form>
+</body>
+
+</html>

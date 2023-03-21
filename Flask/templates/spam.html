@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>SPAM Detection Application</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">  
+	
+	<!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+        
+    <!--====== Font Awesome CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+        
+    <!--====== Line Icons CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.css') }}">
+        
+    <!--====== Animate CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+        
+    <!--====== Magnific Popup CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+        
+    <!--====== Bootstrap CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    
+    <!--====== Default CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+    
+    <!--====== Style CSS ======-->
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header class="header-area">
+        <div class="navbar-area headroom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <h2>THE BOYS</h2>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav m-auto">
+                                   
+                                    
+                                    
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            
+                            
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <!-- header hero -->
+    </header>
+    
+    <!--====== HEADER PART ENDS ======-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+	
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6 class="sub-title">A ML Web App</h6>
+                        <h4 class="title">Spam Detection Application</h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <!-- contact info -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Spam  <span>Detection.</span></h4>
+                        
+						
+						
+                        <form id="contact-form" action="/predict" method="post">
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <div class="contact-form mt-45">
+                                        <label>Your Message</label>
+                                        <textarea name="message" placeholder="Enter your message..."></textarea>
+                                    </div> <!-- contact-form -->
+                                </div>
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="contact-form mt-45">
+                                        <button type="submit" class="main-btn" value="Predict">Predict</button>
+                                    </div> <!-- contact-form -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                    </div> <!-- contact wrapper form -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+    
+    <footer id="footer" class="footer-area bg_cover" style="background-image: url(static/images/footer-bg.jpg)">
+        <div class="container">
+            <div class="footer-widget pt-30 pb-70">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
+                        <div class="footer-about pt-40">
+                            <a href="#">
+                                <h2>THE BOYS</h2>
+                            </a>
+                            <p class="text">love all.</p>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
+                        <div class="footer-link pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">Services</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Spam Detection</a></li>
+                             </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-4 order-lg-3">
+                        <div class="footer-link pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">About Us </h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                               
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-2 order-lg-4">
+                        <div class="footer-contact pt-40">
+                            <div class="footer-title">
+                                <h5 class="title">Contact Information</h5>
+                            </div>
+                            <div class="contact pt-10">
+                                <p class="text">Annamacharya Institute of technology <br>
+                                    Boys Hostels<br>
+									 Rajampet</p>
+                                <p class="text">info@TheBoysTEAM.org</p>
+                                <p class="text">+6302553292</p>
+
+                                <ul class="social mt-40">
+                                    <li><a href="https://www.facebook.com/TheSmartBridgeIoT/"><i class="lni-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/smartbridgeiot"><i class="lni-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/thesmartbridge/"><i class="lni-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/smartbridge-educational-services-pvt-ltd/"><i class="lni-linkedin"></i></a></li>
+                                </ul>
+                            </div> <!-- contact -->
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright text-center">
+                <p class="text">©Made by <a href="https://www.theBoys.com/" rel="nofollow">THE BOYS</a> All Rights Reserved.</p>
+            </div>
+        </div> <!-- container -->
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->  
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="static/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="static/js/slick.min.js"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    
+    <!--====== Counter Up js ======-->
+    <script src="static/js/waypoints.min.js"></script>
+    <script src="static/js/jquery.counterup.min.js"></script>
+    
+    <!--====== Circles js ======-->
+    <script src="static/js/circles.min.js"></script>
+    
+    <!--====== Appear js ======-->
+    <script src="static/js/jquery.appear.min.js"></script>
+    
+    <!--====== WOW js ======-->
+    <script src="static/js/wow.min.js"></script>
+    
+    <!--====== Headroom js ======-->
+    <script src="static/js/headroom.min.js"></script>
+    
+    <!--====== Jquery Nav js ======-->
+    <script src="static/js/jquery.nav.js"></script>
+    
+    <!--====== Scroll It js ======-->
+    <script src="static/js/scrollIt.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="static/js/main.js"></script>
+    
+</body>
+
+</html>
